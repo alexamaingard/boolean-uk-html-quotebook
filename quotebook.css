@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    /*background-color: rgba(223, 223, 223, 0.952);*/
+    padding: 100px 200px;
+    font-size: 5rem;
+
+    border: 1px solid black;
+
+    display: grid;
+    place-items: center;
+    grid-area: h1;
+
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+
+    display: grid;
+    place-items: center;
+    grid-area: h2;
+
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+
+    display: grid;
+    place-items: center;
+    grid-area: h3;
+}
+
+p {
+    font-size: small;
+}
+
+#main-page {
+    height: 100vh;
+    width: 100wh;
+    background-color: white;
+    padding: 50px;
+    /*
+    background-image: url("library-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+*/
+    display: grid;
+
+    grid-template:
+    "."
+    "h1" 1fr
+    "h3" 100px
+    ".";
+
+    gap: 100px;
+}
+
+.book-quotes-page-black {
+    height: 100vh;
+    width: 100wh;
+    background-color: black;
+    padding: 200px;
+    color: white;
+
+    display: grid;
+    grid-template:
+        ". book-quote ." 1fr/
+        1fr 50ch 1fr;
+}
+
+.book-quotes-page-white {
+    height: 100vh;
+    width: 100wh;
+    background-color: white;
+    color: black;
+    padding: 200px;
+
+    display: grid;
+    grid-template:
+        ". book-quote ." 1fr/
+        1fr 50ch 1fr;
+
+
+}
+
+.music-quotes-page-black {
+    height: 100vh;
+    width: 100wh;
+    background-color: black;
+    padding: 200px;
+    color: white;
+
+    display: grid;
+    grid-template:
+        ". music-quote ." 1fr/
+        1fr 50ch 1fr;
+}
+
+.music-quotes-page-white {
+    height: 100vh;
+    width: 100wh;
+    background-color: white;
+    color: black;
+    padding: 200px;
+
+    display: grid;
+    grid-template:
+        ". music-quote ." 1fr/
+        1fr 50ch 1fr;
+
+
+}
+
+.book-quotes {
+    display: grid;
+    grid-area: book-quote;
+
+    grid-template-rows: repeat(2, auto);
+    gap: 50px;
+
+}
+
+.book-quote {
+
+    text-align:justify;
+
+    display: grid;
+    grid-template-rows: 100px 10px;
+
+}
+
+.music-quotes {
+    display: grid;
+    grid-area: music-quote;
+
+    grid-template-rows: repeat(2, auto);
+    gap: 50px;
+
+}
+
+.music-quote {
+
+    text-align:justify;
+
+    display: grid;
+    grid-template-rows: 100px 10px;
+
+}
+
+.quote-left {
+    display: grid;
+    place-items: end;
+    text-align: justify;
+}
+
+.quote-right {
+    display: grid;
+    place-items: end;
+    text-align: justify;
+    text-align-last: right;
+}
+
+.author-right {
+    padding-top: 15px;
+    display: grid;
+    text-align: end;
+}
+
+.author-left {
+    padding-top: 15px;
+    display: grid;
+    text-align: start;
+}
